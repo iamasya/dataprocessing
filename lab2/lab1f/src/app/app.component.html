@@ -1,0 +1,42 @@
+<body>
+  <div class="container">
+      <div class="card">
+          <div class="content">
+              
+              <ul>
+                  <h1>Musical Instruments</h1>
+          
+                  <img src="assets/guitar.jpg">
+                  <li *ngFor="let ent of entityList">
+                      Title: {{ent.title}}
+                  </li>
+                  <li *ngFor="let ent of entityList">
+                      Info: {{ent.info}}
+                  </li>
+                  <li *ngFor="let ent of entityList">
+                      Price: {{ent.price}}
+                  </li>
+                  
+              </ul>
+              <button (click)="getEntities()">Get instrument</button>
+<!-- <a href="./InstrumentServlet"></a> -->
+          </div>
+      </div>
+  </div>
+
+    <form #form1="ngForm" (ngSubmit)="addEntities(form1.value)">
+        <input type="text" name="title" value="" ngModel placeholder="Title">
+        <br>
+        <input type="text" name="info" value="" ngModel placeholder="Info">
+        <br>
+        <input type="number" name="price" value="0" ngModel placeholder="Price">
+        <br>
+        <input type="submit" value="Add an instrument">
+    </form>
+
+    <div class="uml-diagram">
+    <p class="diagram-title">UML Diagram</p>
+    <img src="assets/umldiagram.png" width="100%">
+    </div>
+
+</body>
