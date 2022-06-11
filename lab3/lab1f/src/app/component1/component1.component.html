@@ -1,0 +1,30 @@
+<section>
+    <div class="container"></div>
+        <div class="card">
+            <a href="./InstrumentServlet">InstrumentServlet</a>
+            <button class="rfrbtn" (click)="getEntities()">Refresh</button>
+            <div class="grid1">
+                <div class="one" *ngFor="let a of instrumentList">
+                    <h1>{{a.title}}</h1>
+                    <h2>{{a.info}}<br>
+                    Price: {{a.price}}</h2>
+                </div>
+            </div>
+            
+            <div class="grid2">
+                <div class="add">
+                    <button class="addbtn" (click)="getEntities()">Add Instrument</button>
+                    <div class="add-hidden" id="add-hidden"><app-add></app-add></div>
+                </div>
+                <div class="update">
+                    <button class="updbtn" (click)="getEntities()">Update Instrument</button>
+                    <div class="upd-hidden" id="upd-hidden"><app-upd></app-upd></div>
+                </div>
+                <div class="remove">
+                    <button class="rmbtn" (click)="getEntities()">Remove Instrument</button>
+                    <div class="rm-hidden" id="rm-hidden"><app-rm></app-rm></div>
+                </div>
+        </div>
+    </div>
+    <div class="container"></div>
+    </section>

@@ -1,0 +1,26 @@
+<body>
+  <div class="container">
+      <div class="card">
+          <div class="content">
+              
+              <ul>
+                  <h1>Musical Instruments</h1>
+          
+                  <img src="assets/guitar.jpg" (click)="getEntities()">
+                  <li *ngFor="let ent of entityList">
+                      Title: {{ent.title}}
+                  </li>
+                  <li *ngFor="let ent of entityList">
+                      Info: {{ent.info}}
+                  </li>
+                  <li *ngFor="let ent of entityList">
+                      Price: {{ent.price}}
+                  </li>
+                  
+              </ul>
+              <button (click)="getEntities()"><a href="./servlet1"></a>Get instrument</button>
+
+          </div>
+      </div>
+  </div>
+</body>

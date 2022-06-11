@@ -1,0 +1,9 @@
+<form #form1="ngForm" (ngSubmit)="updEntities(form1.value)" class="updform">
+    <div  *ngFor="let a of instrumentList" >
+        <input type="radio" value="{{a.id}}" name="id" ngModel><label for="id">{{a.title}}</label>
+    </div>
+    <input type="text" placeholder="Title" name="title" ngModel>
+    <input type="text" placeholder="Info" name="info" ngModel>
+    <input type="number" min="1" max="5000" placeholder="Price" name="price" ngModel>
+    <input type="update" class="updbutton" value="Update">
+</form>
