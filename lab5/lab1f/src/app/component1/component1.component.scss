@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Montserrat:wght@500&family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@200&family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+}
+
+a{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.rfrbtn{
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    display: inline-block;
+    padding-top: 500px;
+    padding: 8px 20px;
+    background: #03a8f4b6;
+    margin-top: 150px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.grid1{
+    margin: 30px 30px;
+    display: flex;
+    justify-content:space-between;
+}
+.one{
+    display: grid;
+    grid-template-rows: auto;
+    padding: 20px;
+    margin: 50px;
+    width: 250px;
+    height: fit-content;
+    color: #fff;
+    background-color: #03a8f4b6;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.grid2{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.add, .remove, .update{
+    display: grid;
+    grid-template-rows: 50px auto;
+}
+.addbtn, .rmbtn, .updbtn{
+    background-color: #03a8f4b6;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 244px;
+    text-align: center;
+}
+.add-hidden, .rm-hidden, .upd-hidden{
+    display: none;
+}
