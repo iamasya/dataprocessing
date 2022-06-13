@@ -1,0 +1,26 @@
+.updform{
+    display: grid;
+    grid-template-rows: auto;
+    padding: 20px;
+    margin-top: 10px;
+    width: 200px;
+    height: fit-content;
+    background-color: whitesmoke;
+}
+
+.selectbutton{
+    background-color: #03a8f4b6;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+input[type=update]:focus{
+    // margin-bottom: 10px;
+    background-color: #03a8f4b6;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}

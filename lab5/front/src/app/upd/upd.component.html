@@ -1,0 +1,12 @@
+<form #form1="ngForm" (ngSubmit)="updateRest(form1.value)" class="updform">
+    <div  *ngFor="let a of instrumentList" >
+        <div class="double"><h3>{{a.title}}</h3><button class="selectbutton" (click)="onSelect(a)">Select instrument</button></div>
+        <!-- <input type="radio" value="{{a.id}}" name="id" ngModel><label for="id">{{a.title}}</label> -->
+    </div>
+    <div *ngIf="selectedItem">
+    <input type="text" placeholder="Title" name="title" ngModel="{{selectedItem.title}}">
+    <input type="text" placeholder="Info" name="info" ngModel="{{selectedItem.info}}">
+    <input type="number" min="1" max="5000" placeholder="Price" name="price" ngModel="{{selectedItem.price}}">
+    <input type="update" class="updbutton" value="Update">
+    </div>
+</form>
